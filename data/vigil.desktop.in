@@ -1,0 +1,26 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Vigil
+GenericName=System Monitor
+Comment=Live CPU, RAM, GPU, disk, network, sensors and battery monitor
+Exec=@BIN@
+Icon=vigil
+Terminal=false
+Categories=System;Monitor;GTK;
+Keywords=system;monitor;task manager;cpu;ram;gpu;temperature;process;battery;
+StartupNotify=true
+StartupWMClass=vigil
+Actions=Processes;Diagnose;Sensors;
+
+[Desktop Action Processes]
+Name=Processes
+Exec=@BIN@ --page processes
+
+[Desktop Action Diagnose]
+Name=What's wrong?
+Exec=@BIN@ --page diagnose
+
+[Desktop Action Sensors]
+Name=Sensors
+Exec=@BIN@ --page sensors

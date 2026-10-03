@@ -1,0 +1,4 @@
+#!/bin/sh
+# Dev launcher: run straight from a git checkout.
+d="$(dirname "$(readlink -f "$0")")/.."
+PYTHONPATH="$d${PYTHONPATH:+:$PYTHONPATH}" exec python3 -m vigil "$@"
